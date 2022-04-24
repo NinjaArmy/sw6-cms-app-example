@@ -102,8 +102,8 @@ The elements are rendered alphabetically! There is no information for this on th
 
 This example placed a YouTube-Video and a Text-Element next to each other. If you don't know that they are sorted alphabetically and you only put 2 text elements next to each other you will not realize that the elements are maybe switched. If you then add different texts to the elements you will be confused why you have a different output in the frontend.
 
-I also noticed this:
-![admin Blocks](/Resources/images/adminBlocks.PNG)
+I also noticed this:<br/>
+![admin Blocks](/Resources/images/adminBlocks.PNG)<br/>
 The elements are here also rendered alphabetically from their block-name. If you create different Layouts and the block names would be "layout-one", "layout-two", "layout-three" the output here also would be not as expected which can be confusing.
 
 ### Solution
