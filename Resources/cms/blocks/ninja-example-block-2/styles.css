@@ -1,0 +1,19 @@
+.sw-cms-preview-block-ninja-example-block-2 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-template-rows: 50px;
+    padding: 10px;
+    margin: auto;
+}
+.sw-cms-block-ninja-example-block-2-component {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 15px;
+}
+
+.sw-cms-preview-block-ninja-example-block-2 > div {
+    border: 2px dashed #1c43a3;
+    background-color: rgba(28,67,163,0.1); 
+}

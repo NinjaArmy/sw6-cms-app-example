@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Cms/Schema/cms-1.0.xsd">
+    <blocks>
+        <!-- IMPORTANT SLOTS ARE SORTED APLPHABETICALLY??? NO DOCS ON THIS!! -->
+        <block>
+            <name>ninja-example-block-1</name>
+            <category>text</category>
+            <label>YouTube - Text (normal)</label>
+            <label lang="de-DE">YouTube - Text (normal)</label>
+
+            <!-- Example with normal slot names -->
+            <!-- Expectation: YouTube-Video on the left side, text element on the right side. -->
+            <!-- Result: Text left and YouTube Video right -->
+            <slots>
+                 <slot name="video" type="youtube-video"> 
+                    <config>
+                        <config-value name="display-mode" source="static" value="contain"/>
+                    </config>
+                </slot>
+
+                <slot name="text" type="text">
+                    <config>
+                        <config-value name="vertical-align" source="static" value="top"/>
+                    </config>
+                </slot>
+            </slots>
+
+            <default-config>
+                <margin-top>20px</margin-top>
+                <margin-right>20px</margin-right>
+                <margin-bottom>20px</margin-bottom>
+                <margin-left>20px</margin-left>
+                <sizing-mode>boxed</sizing-mode>
+            </default-config>
+        </block>
+
+        <!-- Same block but alphabetic -->
+        <block>
+            <name>ninja-example-block-2</name>
+            <category>text</category>
+            <label>YouTube - Text (alphabetic)</label>
+            <label lang="de-DE">YouTube - Text (alphabetic)</label>
+
+            <!-- Example with normal slot names -->
+            <!-- Expectation: YouTube-Video on the left side, text element on the right side. -->
+            <!-- Result: as Expectation -->
+            <slots>
+                 <slot name="a" type="youtube-video"> 
+                    <config>
+                        <config-value name="display-mode" source="static" value="contain"/>
+                    </config>
+                </slot>
+
+                <slot name="b" type="text">
+                    <config>
+                        <config-value name="vertical-align" source="static" value="top"/>
+                    </config>
+                </slot>
+            </slots>
+
+            <default-config>
+                <margin-top>20px</margin-top>
+                <margin-right>20px</margin-right>
+                <margin-bottom>20px</margin-bottom>
+                <margin-left>20px</margin-left>
+                <sizing-mode>boxed</sizing-mode>
+            </default-config>
+        </block>
+    </blocks>
+</cms>
