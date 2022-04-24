@@ -4,11 +4,11 @@ Just a small app which creates 2 blocks in the shopware administration.
 
 ## Expectation vs Reality
 
-The documentation on [add-custom-cms-blocks] (https://developer.shopware.com/docs/guides/plugins/apps/content/cms/add-custom-cms-blocks#defining-blocks) is missing some piece of information which causes unexpected behaviour when creating a CMS App.
+The documentation on [add-custom-cms-blocks](https://developer.shopware.com/docs/guides/plugins/apps/content/cms/add-custom-cms-blocks#defining-blocks) is missing some piece of information which causes unexpected behaviour when creating a CMS App.
 
 ### Expectation
 
-My expectation when creating a CMS app and looking at the [CMS-Reference] (https://developer.shopware.com/docs/resources/references/app-reference/cms-reference) is that the slots which are written in the cms.xml are rendered by their order.
+My expectation when creating a CMS app and looking at the [CMS-Reference](https://developer.shopware.com/docs/resources/references/app-reference/cms-reference) is that the slots which are written in the cms.xml are rendered by their order.
 
 Looking at the docs the slot names always are: left, middle, right. Now that works for 3 elements if you always use these slot names but it gets kind of tricky when you add more than 3 elements.
 
@@ -102,7 +102,8 @@ The elements are rendered alphabetically! There is no information for this on th
 
 This example placed a YouTube-Video and a Text-Element next to each other. If you don't know that they are sorted alphabetically and you only put 2 text elements next to each other you will not realize that the elements are maybe switched. If you then add different texts to the elements you will be confused why you have a different output in the frontend.
 
-I also noticed this: ![admin Blocks](/Resources/images/adminBlocks.PNG)
+I also noticed this:
+![admin Blocks](/Resources/images/adminBlocks.PNG)
 The elements are here also rendered alphabetically from their block-name. If you create different Layouts and the block names would be "layout-one", "layout-two", "layout-three" the output here also would be not as expected which can be confusing.
 
 ### Solution
